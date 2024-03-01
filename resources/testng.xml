@@ -4,7 +4,7 @@
     <test verbose="1" preserve-order="true"
           name="D:/Online_Class_29/03 - Java Hybrid Framework/hybrid-nopcommerce-framework/resources">
         <classes>
-            <class name="com.nopcommerce.users.User_01_Register_Login"></class>
+            <class name="com.nopcommerce.users.Level_01_User_Register_Login_Repeat_Yourself"></class>
         </classes>
     </test>
 </suite>
