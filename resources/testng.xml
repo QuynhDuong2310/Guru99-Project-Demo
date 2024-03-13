@@ -1,10 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="1" preserve-order="true"
-          name="D:/Online_Class_29/03 - Java Hybrid Framework/hybrid-nopcommerce-framework/resources">
+<suite name="Guru99 Application">
+    <test verbose="1" preserve-order="true" name="Run on Firefox UI">
+        <parameter name="browser" value="firefox_ui"></parameter>
+        <parameter name="url" value="https://demo.guru99.com/v4/"></parameter>
         <classes>
-            <class name="com.nopcommerce.users.Level_01_User_Register_Login_Repeat_Yourself"></class>
+            <!-- <class name="servicesOrchestration.services.vms.Web_HCP_VMs_Mapping_Data">
+                 <methods>
+                     <include name="TC_1_Mapping_Data_VirtualMachine_With_Stopped_Status"/>
+                    &lt;!&ndash; <include name="TC_2_Update_VirtualMachine_Information"/>&ndash;&gt;
+                 </methods>
+             </class>-->
+            <!--    <class name="servicesOrchestration.services.storage.Web_HCP_Volume_ListingPage">
+                    <methods>
+                        <include name="TC_1_Verify_The_Number_Of_Volume_On_VolumeListingPage"/>
+                        <include name="TC_2_Search_Volume_On_VolumeListingPage"/>
+                        <include name="TC_3_Attach_Volume_On_VolumeListingPage"/>
+                        <include name="TC_4_Dettach_Volume_On_VolumeListingPage"/>
+                    </methods>
+                </class>-->
+            <!--  <class name="Com_Guru_01_Customer_Add_Validation">
+                  <methods>
+                      <include name="TC_NC1_Name_Field_Cannot_Be_Empty"/>
+                      <include name="TC_NC2_Name_Field_Cannot_Be_Numeric"/>
+                      <include name="TC_NC3_Name_Field_Cannot_Contains_Special_Characters"/>
+                      <include name="TC_NC4_Name_Field_Cannot_Contains_Space_Characters_At_The_Beginning"/>
+                      <include name="TC_NC5_Address_Field_Cannot_Be_Empty"/>
+                      <include name="TC_NC6_Address_Field_Cannot_Contains_Space_Characters_At_The_Beginning"/>
+                      <include name="TC_NC8_City_Field_Cannot_Be_Empty"/>
+                      <include name="TC_NC3_City_Field_Cannot_Be_Numeric"/>
+                      <include name="TC_NC10_City_Field_Cannot_Contains_Special_Characters"/>
+                      <include name="TC_NC11_City_Field_Cannot_Contains_Space_Characters_At_The_Beginning"/>
+                      <include name="TC_NC12_State_Field_Cannot_Be_Empty"/>
+                      <include name="TC_NC13_State_Field_Cannot_Be_Numeric"/>
+                      <include name="TC_NC14_State_Field_Cannot_Contains_Special_Characters"/>
+                      <include name="TC_NC15_State_Field_Cannot_Contains_Space_Characters_At_The_Beginning"/>
+                      <include name="TC_NC15_State_Field_Cannot_Contains_Space_Characters_At_The_Beginning"/>
+                      <include name="TC_NC16_Pin_Field_Cannot_Be_Empty"/>
+                      <include name="TC_NC17_Pin_Field_Must_Be_Numeric"/>
+                      <include name="TC_NC18_Pin_Field_Cannot_Contains_Special_Characters"/>
+                      <include name="TC_NC19_Pin_Field_Cannot_Contains_Space_Characters_At_The_Beginning"/>
+                      <include name="TC_NC20_Pin_Field_Must_Have_6_Digits"/>
+                      <include name="TC_NC22_Phone_Field_Cannot_Be_Empty"/>
+                      <include name="TC_NC23_Phone_Field__Cannot_Contains_Space_Characters_At_The_Beginning"/>
+                      <include name="TC_NC24_Phone_Field_Cannot_Have_Space"/>
+                      <include name="TC_NC25_Phone_Field_Cannot_Have_Space"/>
+                      <include name="TC_NC26_Email_Field_Cannot_Be_Empty"/>
+                      <include name="TC_NC27_Email_Field_Must_Be_Valid_Format"/>
+                      <include name="TC_NC28_Email_Field_Cannot_Have_Space"/>
+                  </methods>
+              </class>-->
+            <class name="com.guru99.customers.Com_Guru_04_Customer_CRUD">
+                <methods>
+                    <include name="TC_CRUD1_Create_New_Customer_Successfully"/>
+                    <include name="TC_CRUD2_Edit_Newly_Created_Customer_Successfully"/>
+                    <include name="TC_CRUD3_Delete_An_Existing_Customer_Successfully"/>
+                </methods>
+            </class>
+            <!--   <class name="Com_Guru_02_Customer_Edit_Validation">
+                   <methods>
+                       <include name="TC_EC1_CustomerID_Cannot_Be_Empty"/>
+                       <include name="TC_EC2_CustomerID_Must_Be_Numeric"/>
+                       <include name="TC_EC3_CustomerID_Cannot_Have_Special_Charater"/>
+                       <include name="TC_EC4_CustomerID_Valid_Value"/>
+                       <include name="TC_EC5_CustomerName_Is_Disabled"/>
+                       <include name="TC_EC6_CustomerGender_Is_Disabled"/>
+                       <include name="TC_EC7_CustomerDateOFBirth_Is_Disabled"/>
+                   </methods>
+               </class>-->
+            <!--            <class name="Com_Guru_03_Customer_Delete_Validation">
+                            <methods>
+                                <include name="TC_DC1_CustomerID_Cannot_Be_Empty"/>
+                                <include name="TC_DC2_CustomerID_Must_Be_Numeric"/>
+                                <include name="TC_DC3_CustomerID_Cannot_Have_Special_Charater"/>
+                                <include name="TC_DC4_CustomerID_Cannot_Have_Space_Charater_AT_The_Beginning"/>
+                                <include name="TC_DC5_CustomerID_Valid_Value"/>
+                                <include name="TC_DC6_Cannot_Delete_The_Deleted_CustomerId"/>
+                            </methods>
+                        </class>-->
         </classes>
     </test>
+    <!-- <test verbose="1" preserve-order="true" name="Run on Firefox headless">
+         <parameter name="browser" value="firefox_headless"></parameter>
+         <classes>
+             <class name="servicesOrchestration.services.vms.Web_HCP_VMs_Mapping_Data">
+                 <methods>
+                     <include name="TC_1_Mapping_Data_VirtualMachine_With_Stopped_Status"/>
+                    &lt;!&ndash; <include name="TC_2_Update_VirtualMachine_Information"/> &ndash;&gt;
+                 </methods>
+             </class>
+          &lt;!&ndash;   <class name="servicesOrchestration.services.storage.Web_HCP_Volume_ListingPage">
+                 <methods>
+                     <include name="TC_1_Verify_The_Number_Of_Volume_On_VolumeListingPage"/>
+                 </methods>
+             </class>&ndash;&gt;
+         </classes>
+     </test>
+     <test verbose="1" preserve-order="true" name="Run on Chrome UI">
+         <parameter name="browser" value="chrome_ui"></parameter>
+         <classes>
+             <class name="servicesOrchestration.services.vms.Web_HCP_VMs_Mapping_Data">
+                 <methods>
+                     <include name="TC_1_Mapping_Data_VirtualMachine_With_Stopped_Status"/>
+                     &lt;!&ndash;<include name="TC_2_Update_VirtualMachine_Information"/>&ndash;&gt;
+                 </methods>
+             </class>
+           &lt;!&ndash;  <class name="servicesOrchestration.services.storage.Web_HCP_Volume_ListingPage">
+                 <methods>
+                     <include name="TC_1_Verify_The_Number_Of_Volume_On_VolumeListingPage"/>
+                 </methods>
+             </class>&ndash;&gt;
+         </classes>
+     </test>
+     <test verbose="1" preserve-order="true" name="Run on Chrome headless">
+         <parameter name="browser" value="chrome_headless"></parameter>
+         <classes>
+             <class name="servicesOrchestration.services.vms.Web_HCP_VMs_Mapping_Data">
+                 <methods>
+                     <include name="TC_1_Mapping_Data_VirtualMachine_With_Stopped_Status"/>
+                     &lt;!&ndash;<include name="TC_2_Update_VirtualMachine_Information"/> &ndash;&gt;
+                 </methods>
+             </class>
+       &lt;!&ndash;      <class name="servicesOrchestration.services.storage.Web_HCP_Volume_ListingPage">
+                 <methods>
+                     <include name="TC_1_Verify_The_Number_Of_Volume_On_VolumeListingPage"/>
+                 </methods>
+             </class>&ndash;&gt;
+         </classes>
+     </test>-->
 </suite>

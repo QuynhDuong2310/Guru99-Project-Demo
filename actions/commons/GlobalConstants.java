@@ -6,7 +6,7 @@ public class GlobalConstants {
     // Credentials: Username/Password
     // Tên Database/Username/Password cho từng server
     // Biến timeout long/short
-    // ố lần retry la test failed
+    // Số lần retry la test failed
     // Đường dẫn tương đối đến thư mục download/file data(xml/ excel/ json/...)/ file upload
 
 
