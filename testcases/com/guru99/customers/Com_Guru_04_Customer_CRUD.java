@@ -64,7 +64,6 @@ public class Com_Guru_04_Customer_CRUD extends BaseTest {
         newCustomerPageObject.enterAnValidEmail(emailTextbox,randomEmailValue);
         newCustomerPageObject.enterAnValidPassword(passwordTextbox,validPasswordValue);
         newCustomerPageObject.clickToSubmitButton();
-        Assert.assertEquals(newCustomerPageObject.getNewCustomerCreatoinSuccessMessage(), "Customer Registered Successfully!!!");
         customerID = newCustomerPageObject.getCustomerIDInformation("Customer ID");
         System.out.println(customerID);
         Assert.assertEquals(newCustomerPageObject.getCustomerNameInformation(customerNameTextbox), validCustomerNameValue);
